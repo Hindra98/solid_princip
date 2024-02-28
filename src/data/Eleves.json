@@ -1,0 +1,242 @@
+[
+    {
+      "id": 1,
+      "name": "John",
+      "lastname": "Doe",
+      "age": 17,
+      "points": 85,
+      "classe": "11A"
+    },
+    {
+      "id": 2,
+      "name": "Jane",
+      "lastname": "Smith",
+      "age": 16,
+      "points": 92,
+      "classe": "10B"
+    },
+    {
+      "id": 3,
+      "name": "Michael",
+      "lastname": "Johnson",
+      "age": 18,
+      "points": 78,
+      "classe": "12C"
+    },
+    {
+      "id": 4,
+      "name": "Sophia",
+      "lastname": "Brown",
+      "age": 17,
+      "points": 87,
+      "classe": "11A"
+    },
+    {
+      "id": 5,
+      "name": "David",
+      "lastname": "Lee",
+      "age": 16,
+      "points": 95,
+      "classe": "10B"
+    },
+    {
+      "id": 6,
+      "name": "Olivia",
+      "lastname": "Wilson",
+      "age": 18,
+      "points": 80,
+      "classe": "12C"
+    },
+    {
+      "id": 7,
+      "name": "Emma",
+      "lastname": "Taylor",
+      "age": 17,
+      "points": 89,
+      "classe": "11A"
+    },
+    {
+      "id": 8,
+      "name": "Daniel",
+      "lastname": "Martinez",
+      "age": 16,
+      "points": 93,
+      "classe": "10B"
+    },
+    {
+      "id": 9,
+      "name": "Isabella",
+      "lastname": "Anderson",
+      "age": 18,
+      "points": 77,
+      "classe": "12C"
+    },
+    {
+      "id": 10,
+      "name": "Sophie",
+      "lastname": "Clark",
+      "age": 17,
+      "points": 86,
+      "classe": "11A"
+    },
+    {
+      "id": 11,
+      "name": "Matthew",
+      "lastname": "White",
+      "age": 16,
+      "points": 94,
+      "classe": "10B"
+    },
+    {
+      "id": 12,
+      "name": "Ava",
+      "lastname": "Thomas",
+      "age": 18,
+      "points": 79,
+      "classe": "12C"
+    },
+    {
+      "id": 13,
+      "name": "Liam",
+      "lastname": "Harris",
+      "age": 17,
+      "points": 88,
+      "classe": "11A"
+    },
+    {
+      "id": 14,
+      "name": "Chloe",
+      "lastname": "Walker",
+      "age": 16,
+      "points": 91,
+      "classe": "10B"
+    },
+    {
+      "id": 15,
+      "name": "Ethan",
+      "lastname": "Green",
+      "age": 18,
+      "points": 76,
+      "classe": "12C"
+    },
+    {
+      "id": 16,
+      "name": "Mia",
+      "lastname": "King",
+      "age": 17,
+      "points": 84,
+      "classe": "11A"
+    },
+    {
+      "id": 17,
+      "name": "Lucas",
+      "lastname": "Baker",
+      "age": 16,
+      "points": 96,
+      "classe": "10B"
+    },
+    {
+      "id": 18,
+      "name": "Grace",
+      "lastname": "Evans",
+      "age": 18,
+      "points": 81,
+      "classe": "12C"
+    },
+    {
+      "id": 19,
+      "name": "Alexander",
+      "lastname": "Garcia",
+      "age": 17,
+      "points": 90,
+      "classe": "11A"
+    },
+    {
+      "id": 20,
+      "name": "Lily",
+      "lastname": "Cooper",
+      "age": 16,
+      "points": 97,
+      "classe": "10B"
+    },
+    {
+      "id": 21,
+      "name": "Noah",
+      "lastname": "Murphy",
+      "age": 18,
+      "points": 75,
+      "classe": "12C"
+    },
+    {
+      "id": 22,
+      "name": "Aria",
+      "lastname": "Richardson",
+      "age": 17,
+      "points": 83,
+      "classe": "11A"
+    },
+    {
+      "id": 23,
+      "name": "James",
+      "lastname": "Rogers",
+      "age": 16,
+      "points": 98,
+      "classe": "10B"
+    },
+    {
+      "id": 24,
+      "name": "Sofia",
+      "lastname": "Scott",
+      "age": 18,
+      "points": 74,
+      "classe": "12C"
+    },
+    {
+      "id": 25,
+      "name": "Benjamin",
+      "lastname": "Wright",
+      "age": 17,
+      "points": 82,
+      "classe": "11A"
+    },
+    {
+      "id": 26,
+      "name": "Zoe",
+      "lastname": "Parker",
+      "age": 16,
+      "points": 99,
+      "classe": "10B"
+    },
+    {
+      "id": 27,
+      "name": "Logan",
+      "lastname": "Adams",
+      "age": 18,
+      "points": 73,
+      "classe": "12C"
+    },
+    {
+      "id": 28,
+      "name": "Ella",
+      "lastname": "Collins",
+      "age": 17,
+      "points": 81,
+      "classe": "11A"
+    },
+    {
+      "id": 29,
+      "name": "Carter",
+      "lastname": "Cook",
+      "age": 16,
+      "points": 100,
+      "classe": "10B"
+    },
+    {
+      "id": 30,
+      "name": "Avery",
+      "lastname": "Bailey",
+      "age": 18,
+      "points": 72,
+      "classe": "12C"
+    }
+  ]

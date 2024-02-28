@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button {
+  background-color: rgb(127, 223, 255) !important;
+  border: 1px solid transparent;
+  padding: 7px;
+  margin: 5px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 10ms ease-in-out;
+  width: 45%;
+}
+button:hover {
+  background-color: rgb(31, 117, 146) !important;
+  border: 1px solid rgb(127, 223, 255);
+}

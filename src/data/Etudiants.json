@@ -1,0 +1,135 @@
+[
+  {
+    "name": "John",
+    "lastname": "Doe",
+    "age": "20",
+    "points": "100",
+    "filiere": "Computer Science"
+  },
+  {
+    "name": "Jane",
+    "lastname": "Smith",
+    "age": "22",
+    "points": "95",
+    "filiere": "Electrical Engineering"
+  },
+  {
+    "name": "Michael",
+    "lastname": "Johnson",
+    "age": "21",
+    "points": "98",
+    "filiere": "Mechanical Engineering"
+  },
+  {
+    "name": "Emily",
+    "lastname": "Brown",
+    "age": "19",
+    "points": "92",
+    "filiere": "Chemical Engineering"
+  },
+  {
+    "name": "Daniel",
+    "lastname": "Taylor",
+    "age": "20",
+    "points": "88",
+    "filiere": "Civil Engineering"
+  },
+  {
+    "name": "Olivia",
+    "lastname": "Miller",
+    "age": "22",
+    "points": "91",
+    "filiere": "Environmental Science"
+  },
+  {
+    "name": "David",
+    "lastname": "Anderson",
+    "age": "21",
+    "points": "94",
+    "filiere": "Biology"
+  },
+  {
+    "name": "Sophia",
+    "lastname": "Wilson",
+    "age": "19",
+    "points": "87",
+    "filiere": "Physics"
+  },
+  {
+    "name": "Matthew",
+    "lastname": "Thomas",
+    "age": "20",
+    "points": "90",
+    "filiere": "Mathematics"
+  },
+  {
+    "name": "Ava",
+    "lastname": "Jackson",
+    "age": "22",
+    "points": "93",
+    "filiere": "Business Administration"
+  },
+  {
+    "name": "James",
+    "lastname": "White",
+    "age": "21",
+    "points": "86",
+    "filiere": "Economics"
+  },
+  {
+    "name": "Emma",
+    "lastname": "Harris",
+    "age": "19",
+    "points": "89",
+    "filiere": "Political Science"
+  },
+  {
+    "name": "William",
+    "lastname": "Martin",
+    "age": "20",
+    "points": "92",
+    "filiere": "International Relations"
+  },
+  {
+    "name": "Mia",
+    "lastname": "Thompson",
+    "age": "22",
+    "points": "85",
+    "filiere": "Sociology"
+  },
+  {
+    "name": "Benjamin",
+    "lastname": "Garcia",
+    "age": "21",
+    "points": "88",
+    "filiere": "Psychology"
+  },
+  {
+    "name": "Abigail",
+    "lastname": "Martinez",
+    "age": "19",
+    "points": "91",
+    "filiere": "English Literature"
+  },
+  {
+    "name": "Ethan",
+    "lastname": "Robinson",
+    "age": "20",
+    "points": "94",
+    "filiere": "History"
+  },
+  {
+    "name": "Charlotte",
+    "lastname": "Clark",
+    "age": "22",
+    "points": "87",
+    "filiere": "Art"
+  },
+  {
+    "name": "Alexander",
+    "lastname": "Rodriguez",
+    "age": "21",
+    "points": "90",
+    "filiere": "Music"
+  }
+]
