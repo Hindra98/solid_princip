@@ -1,6 +1,6 @@
 import dataBonus from "./data/Bonus.json";
 
-abstract class Bonus {
+ class Bonus {
     getBonus(id: number): number {
         for(const key in dataBonus) {
             if(dataBonus[key].id === id) {

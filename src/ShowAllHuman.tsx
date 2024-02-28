@@ -1,10 +1,11 @@
-import { useAppDispatch, useAppSelector } from "./app/hooks";
-import { decrement, increment } from "./eleveSlice";
+import ShowHumanRow from "./ShowHumanRow";
+import { useAppSelector } from "./app/hooks";
 
 function ShowAllHuman() {
 
-  const eleves = useAppSelector((state) => state);
-  const dispatch = useAppDispatch();
+  const eleves = useAppSelector((state) => state.eleve);
+  const etudiants = useAppSelector((state) => state.etudiant);
+  const workers = useAppSelector((state) => state.worker);
 
   return (
     <>
@@ -20,37 +21,30 @@ function ShowAllHuman() {
           </tr>
         </thead>
         <tbody>
-          {eleves.map((eleve, key) => {
+          <tr><td colSpan={6}><h1 className="font-bold text-3xl">Les eleves</h1></td></tr>
+          {eleves.map((eleve) => {
             return (
-              <tr className={eleve.style} key={key}>
-                <td>{eleve.id}</td>
-                <td>{eleve.fullName}</td>
-                <td>{eleve.age} ans</td>
-                <td>{eleve.fonction}</td>
-                <td>
-                  {eleve.points > 0
-                    ? eleve.points
-                    : "Sans points"}
-                </td>
-                <td className="bg-white">
-                  <button onClick={() => dispatch(increment({ id: eleve.id }))}>
-                    +
-                  </button>
-                  <button onClick={() => dispatch(decrement({ id: eleve.id }))}>
-                    -
-                  </button>
-
-                  {/* {eleve.getOneTypeHuman().points > 0 ? (
-          <>
-            <button onClick={() => dispatch(increment({id:eleve.getOneTypeHuman().id}))}>+</button>
-            <button onClick={() => dispatch(increment({id:eleve.getOneTypeHuman().id}))}>-</button>
-          </>
-        ) : (
-          "Aucune action requise"
-        )} */}
-        
-                </td>
-              </tr>
+                // <ShowHumanRow id={eleve.id} fullName={eleve.fullName} age={eleve.age} fonction={eleve.fonction}
+                // points={eleve.points} style={eleve.style} key={key} />
+                ShowHumanRow(eleve)
+            );
+          })}
+          
+          <tr><td colSpan={6}><h1 className="font-bold text-3xl">Les etudiants</h1></td></tr>
+          {etudiants.map((etudiant) => {
+            return (
+                // <ShowHumanRow id={etudiant.id} fullName={etudiant.fullName} age={etudiant.age} fonction={etudiant.fonction}
+                // points={etudiant.points} style={etudiant.style} key={key} />
+                ShowHumanRow(etudiant)
+            );
+          })}
+          
+          <tr><td colSpan={6}><h1 className="font-bold text-3xl">Les workers</h1></td></tr>
+          {workers.map((worker) => {
+            return (
+                // <ShowHumanRow id={worker.id} fullName={worker.fullName} age={worker.age} fonction={worker.fonction}
+                // points={worker.points} style={worker.style} key={key} />
+                ShowHumanRow(worker)
             );
           })}
         </tbody>

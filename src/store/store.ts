@@ -1,5 +1,5 @@
 
-import com from '../eleveSlice';
+import com from '../humanSlice';
 // import counterSlice from '../counterSlice';
 // import reducer from './reducer'
 import { configureStore } from '@reduxjs/toolkit';

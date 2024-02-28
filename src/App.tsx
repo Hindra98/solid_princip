@@ -1,7 +1,7 @@
 import "./App.css";
 import ShowAllHuman from "./ShowAllHuman";
 import { useAppSelector } from "./app/hooks";
-import { selectAllEleves } from "./eleveSlice";
+import { selectAllEleves } from "./humanSlice";
 
 function App() {
   const allEl = useAppSelector((state) => state);

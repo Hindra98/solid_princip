@@ -7,9 +7,8 @@ class Etudiant extends Human {
   age: number = 0;
   style: string = "";
   fonction: string = "";
-  points: number = 0;
 
-  constructor(id: number, name: string, lastName: string, age: number, filiere: string, style: string, points: number) {
+  constructor(id: number, name: string, lastName: string, age: number, filiere: string, style: string = "bg-red-500 font-bold") {
     super();
     this.id = id;
     this.name = name;
@@ -17,7 +16,6 @@ class Etudiant extends Human {
     this.age = age;
     this.style = style;
     this.fonction = filiere;
-    this.points = points;
   }
   fullName(): string {
     return this.name + " " + this.lastName;

@@ -7,10 +7,8 @@ class Eleve extends Human {
   age: number = 0;
   style: string = "";
   fonction: string = "";
-  points: number = 0;
 
-  constructor(id: number, name: string, lastName: string, age: number, classe: string,
-    points: number, style: string = "bg-red-400 font-bold") {
+  constructor(id: number, name: string, lastName: string, age: number, classe: string, style: string = "bg-green-600 font-bold") {
     super();
     this.id = id;
     this.name = name;
@@ -18,8 +16,6 @@ class Eleve extends Human {
     this.age = age;
     this.style = style;
     this.fonction = classe;
-    this.points = points;
-    this.points = points;
   }
   fullName(): string {
     return this.name + " " + this.lastName;

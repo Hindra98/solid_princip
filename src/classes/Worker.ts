@@ -8,7 +8,7 @@ class TWorker extends Human {
   style: string = "";
   fonction: string = "";
 
-  constructor(id: number, name: string, lastName: string, age: number, domaine: string, style: string) {
+  constructor(id: number, name: string, lastName: string, age: number, domaine: string, style: string = "bg-yellow-600 font-bold") {
     super();
     this.id = id;
     this.name = name;
