@@ -7,7 +7,8 @@ function ShowHumanRow(human: {
   age: number,
   fonction: string,
   points: number,
-  style: string
+  style: string,
+  key: string
 }) {
   const dispatch = useAppDispatch();
   return (
@@ -21,8 +22,8 @@ function ShowHumanRow(human: {
         <td className="bg-white">
           {human.points > 0 ? (
             <>
-              <button onClick={() => dispatch(increment({ id: human.id }))}>+</button>
-              <button onClick={() => dispatch(decrement({ id: human.id }))}>-</button>
+              <button onClick={() => dispatch(increment({ id: human.id, key: human.key }))}>+</button>
+              <button onClick={() => dispatch(decrement({ id: human.id, key: human.key }))}>-</button>
             </>
           ) : (
             "Aucune action requise"

@@ -7,7 +7,7 @@ const allEleves = new GetElevesService().getAllEleve(); // Type OneHuman[]
 const allEtudiants = new GetElevesService().getAllEtudiant(); // Type OneHuman[]
 const allWorkers = new GetElevesService().getAllWorker(); // Type OneHuman[]
 
-const allHuman = (allHuman: OneHuman[]) => {
+const allHuman = (allHuman: OneHuman[], key: string) => {
   const tab = [];
   for (let index = 0; index < allHuman.length; index++) {
     const element = allHuman[index];
@@ -18,26 +18,39 @@ const allHuman = (allHuman: OneHuman[]) => {
       fonction: element.fonction,
       points: element.points,
       style: element.style,
+      key: key,
     });
   }
   return tab;
 };
 
 const initialStates = {
-    eleve: allHuman(allEleves),
-    etudiant: allHuman(allEtudiants),
-    worker: allHuman(allWorkers)
+    eleve: allHuman(allEleves, 'EL'),
+    etudiant: allHuman(allEtudiants, 'ET'),
+    worker: allHuman(allWorkers, 'WO'),
 }
 
 export const eleveSlice = createSlice({
   name: "eleve",
   initialState: initialStates,
   reducers: {
-    increment: (state, action: { payload: { id: number } }) => {
-      state.eleve.map((eleve) => eleve.id == action.payload.id && eleve.points++);
+    increment: (state, action: { payload: { id: number, key:string } }) => {
+        action.payload.key === 'EL' ?
+        state.eleve.map((eleve) => eleve.id == action.payload.id && eleve.points++) :
+        action.payload.key === 'ET' ?
+        state.etudiant.map((etudiant) => etudiant.id == action.payload.id && etudiant.points++) :
+        action.payload.key === 'WO' ?
+        state.worker.map((worker) => worker.id == action.payload.id && worker.points++):
+        state;
     },
-    decrement: (state, action: { payload: { id: number } }) => {
-      state.eleve.map((eleve) => eleve.id == action.payload.id && eleve.points--);
+    decrement: (state, action: { payload: { id: number, key:string } }) => {
+        action.payload.key === 'EL' ?
+        state.eleve.map((eleve) => eleve.id == action.payload.id && eleve.points--) :
+        action.payload.key === 'ET' ?
+        state.etudiant.map((etudiant) => etudiant.id == action.payload.id && etudiant.points--) :
+        action.payload.key === 'WO' ?
+        state.worker.map((worker) => worker.id == action.payload.id && worker.points--):
+        state;
     },
     incrementByAmount: (
       state,

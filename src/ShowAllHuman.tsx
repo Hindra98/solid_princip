@@ -1,3 +1,4 @@
+import axios from "axios";
 import ShowHumanRow from "./ShowHumanRow";
 import { useAppSelector } from "./app/hooks";
 
@@ -6,7 +7,34 @@ function ShowAllHuman() {
   const eleves = useAppSelector((state) => state.eleve);
   const etudiants = useAppSelector((state) => state.etudiant);
   const workers = useAppSelector((state) => state.worker);
+  const testApi = async () => {
+    console.log('Testing');
+//   axios.get("https://pokeapi.co/api/v2/berry").then((res) => {
+//     console.log(res.data.results);
+//   });
 
+  // Intercepted requests
+  const instance = axios.create({
+    baseURL: "https://pokeapi.co/api/v2/berry",
+  })
+  instance.interceptors.request.use((request) => {
+    request.headers.Authorization = `Bearer ${localStorage.getItem('token')}`;
+    request.headers.Accept = 'application/json';
+    console.log("Request Sent");
+    return request;
+  }, (err) => {
+    console.log("Request Failed");
+    return Promise.reject(err);
+  });
+
+  instance.interceptors.response.use((response) => {
+    console.log("Response Sent", response);
+    return response;
+  }, (error) => {
+    console.log("Response Failed", error);
+    return Promise.reject(error);
+  });
+}
   return (
     <>
       <table className="table table-fixed px-2 py-1 text-center w-full my-5 border-separate border-spacing-2">
@@ -51,7 +79,7 @@ function ShowAllHuman() {
         <tfoot>
           <tr key={20000}>
             <td colSpan={6}>
-              <button className="bg-blue-500">Enregistrer</button>
+              <button className="bg-blue-500" onClick={testApi}>Enregistrer</button>
             </td>
           </tr>
         </tfoot>
